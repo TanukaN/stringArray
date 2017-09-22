@@ -17,6 +17,8 @@
 	$obj1=new arrayClass();                 //Defining array class for Array functions
 	$a = array('Dan','Steve','Padma','Jerry');
 	$obj1->array_chunk($a);
+	$b = array(30,45,42,68);
+	$obj1->array_combine($a,$b);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -81,6 +83,12 @@
 			echo '<h2>1. array_chunk function</h2>';
 			print_r(array_chunk($a,2));
 			echo '<hr>';
+		}
+		public function array_combine($a,$b) {
+		        echo '<h2>2. array_combine</h2>';
+		        $result = array_combine($a, $b);
+		        print_r($result);
+		        echo '<hr>';
 		}
 	}
 ?>
