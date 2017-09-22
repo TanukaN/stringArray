@@ -4,6 +4,7 @@
 	$obj->chr($str);
 	$text = "learning PHP in IS601";
 	$obj->echothis($text);
+	$obj->explode($text);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -17,6 +18,12 @@
 		        echo '<h2>2. echo function</h2>';
 		        echo 'It is fun when you are ' .$text;
 			echo '<hr>';
+		}
+		public function explode($text) {
+		        echo '<h2>3. explode function</h2>';
+		        $output = explode(" ", $text);
+		        echo $output[1];
+		        echo '<hr>';
 		}
 														    
 	}					
