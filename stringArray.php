@@ -12,6 +12,7 @@
 	$obj->ltrim($text);
 	$obj->strlen($text);
 	$obj->strtolower($text);
+	$obj->substr_replace($text);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -62,6 +63,11 @@
 		        echo 'Sentence in lowercase is: '.strtolower($text);
 		        echo '<hr>';
 		}	
+		public function substr_replace($text) {
+		        echo '<h2>10. substr_replace function</h2>';
+		        echo substr_replace($text,'Fall 2017',16);
+		        echo '<hr>';
+		}
 	}					
 ?>
 
