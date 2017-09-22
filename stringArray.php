@@ -27,6 +27,7 @@
 	$d = array("a"=>"apple","b"=>"banana");
 	$obj1->array_search($d);
 	$obj1->count($c);
+	$obj1->each($d);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -128,6 +129,11 @@
 		public function count($c) {
 		        echo '<h2>8. count</h2>';
 		        echo 'No. of professors are: '.count($c);
+		        echo '<hr>';
+		}
+		public function each($d) {
+		        echo '<h2>9. each function</h2>';
+		        print_r(each($d));
 		        echo '<hr>';
 		}
 	}
