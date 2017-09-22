@@ -13,6 +13,10 @@
 	$obj->strlen($text);
 	$obj->strtolower($text);
 	$obj->substr_replace($text);
+
+	$obj1=new arrayClass();                 //Defining array class for Array functions
+	$a = array('Dan','Steve','Padma','Jerry');
+	$obj1->array_chunk($a);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -68,6 +72,16 @@
 		        echo substr_replace($text,'Fall 2017',16);
 		        echo '<hr>';
 		}
-	}					
+	}
+	class arrayClass {
+		public function __construct() {
+			echo "<CENTER><h1>Array functions</h1></CENTER>";
+		}
+		public function array_chunk($a) {
+			echo '<h2>1. array_chunk function</h2>';
+			print_r(array_chunk($a,2));
+			echo '<hr>';
+		}
+	}
 ?>
 
