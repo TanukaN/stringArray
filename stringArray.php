@@ -28,6 +28,7 @@
 	$obj1->array_search($d);
 	$obj1->count($c);
 	$obj1->each($d);
+	$obj1->sort($a);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -134,6 +135,16 @@
 		public function each($d) {
 		        echo '<h2>9. each function</h2>';
 		        print_r(each($d));
+		        echo '<hr>';
+		}
+		public function sort($a) {
+		        echo '<h2>10. sort</h2>';
+			sort($a);
+			$clength = count($a);
+			for($i = 0; $i < $clength; $i++) {
+		        	echo $a[$i];
+		                echo "&nbsp;&nbsp;&nbsp;";
+		        }
 		        echo '<hr>';
 		}
 	}
