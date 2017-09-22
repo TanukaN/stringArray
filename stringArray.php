@@ -11,6 +11,7 @@
 	$obj->count_chars($text);
 	$obj->ltrim($text);
 	$obj->strlen($text);
+	$obj->strtolower($text);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -56,6 +57,11 @@
 		        echo 'The length of the sentence is: '.strlen($text);
 		        echo '<hr>';
 		}
+		public function strtolower($text) {
+		        echo '<h2>9. strtolower function</h2>';
+		        echo 'Sentence in lowercase is: '.strtolower($text);
+		        echo '<hr>';
+		}	
 	}					
 ?>
 
