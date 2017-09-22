@@ -7,6 +7,7 @@
 	$obj->explode($text);
 	$text1 = "&lt;a href=&quot;https://www.linkedin.com/in/tanuka-nayak/&quot;&gt;LinkedIn&lt;/a&gt;";
 	$obj->html_entity_decode($text1);
+	$obj->htmlentities($text1);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -32,7 +33,11 @@
 		        echo 'Connect with me on: '.html_entity_decode($text1);
 		        echo '<hr>';
 		}
-																    
+		public function htmlentities($text1) {
+		        echo '<h2>5. htmlentities function</h2>';
+		        echo htmlentities($text1);
+		        echo '<hr>';
+		}
 	}					
 ?>
 
