@@ -9,6 +9,7 @@
 	$obj->html_entity_decode($text1);
 	$obj->htmlentities($text1);
 	$obj->count_chars($text);
+	$obj->ltrim($text);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -43,7 +44,12 @@
 		        echo '<h2>6. count_chars function</h2>';
 			echo 'The distinct characters used in the sentence are: '.count_chars($text,3);
 		        echo '<hr>';
-		}			
+		}	
+		public function ltrim($text) {
+		        echo '<h2>7. ltrim function</h2>';
+		        echo 'After trimming the sentence, we get: '.ltrim($text,"learning");
+		        echo '<hr>';
+		}
 	}					
 ?>
 
