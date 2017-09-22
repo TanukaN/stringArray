@@ -8,6 +8,7 @@
 	$text1 = "&lt;a href=&quot;https://www.linkedin.com/in/tanuka-nayak/&quot;&gt;LinkedIn&lt;/a&gt;";
 	$obj->html_entity_decode($text1);
 	$obj->htmlentities($text1);
+	$obj->count_chars($text);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -38,6 +39,11 @@
 		        echo htmlentities($text1);
 		        echo '<hr>';
 		}
+		public function count_chars($text) {
+		        echo '<h2>6. count_chars function</h2>';
+			echo 'The distinct characters used in the sentence are: '.count_chars($text,3);
+		        echo '<hr>';
+		}			
 	}					
 ?>
 
