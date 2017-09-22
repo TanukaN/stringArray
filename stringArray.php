@@ -26,6 +26,7 @@
 	$obj1->array_pop($c);
 	$d = array("a"=>"apple","b"=>"banana");
 	$obj1->array_search($d);
+	$obj1->count($c);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -122,6 +123,11 @@
 		public function array_search($d) {
 		        echo '<h2>7. array_search function</h2>';
 		        echo 'The corresponding key in the array for apple is: '.array_search("apple",$d);
+		        echo '<hr>';
+		}
+		public function count($c) {
+		        echo '<h2>8. count</h2>';
+		        echo 'No. of professors are: '.count($c);
 		        echo '<hr>';
 		}
 	}
