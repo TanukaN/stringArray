@@ -23,6 +23,7 @@
 	$obj1->array_diff_assoc($a,$c);
 	$obj1->array_fill_keys($c);
 	$obj1->array_keys($c);
+	$obj1->array_pop($c);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -109,6 +110,11 @@
 		public function array_keys($c) {
 		        echo '<h2>5. array_keys function</h2>';
 		        print_r(array_keys($c,"James"));
+		        echo '<hr>';
+		}
+		public function array_pop($c) {
+		        echo '<h2>6. array_pop</h2>';
+		        echo 'The popped array is: '.array_pop($c);
 		        echo '<hr>';
 		}
 	}
