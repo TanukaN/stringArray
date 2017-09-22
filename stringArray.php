@@ -5,6 +5,8 @@
 	$text = "learning PHP in IS601";
 	$obj->echothis($text);
 	$obj->explode($text);
+	$text1 = "&lt;a href=&quot;https://www.linkedin.com/in/tanuka-nayak/&quot;&gt;LinkedIn&lt;/a&gt;";
+	$obj->html_entity_decode($text1);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -25,7 +27,12 @@
 		        echo $output[1];
 		        echo '<hr>';
 		}
-														    
+		public function html_entity_decode($text1) {
+		        echo '<h2>4. html_entity_decode function</h2>';
+		        echo 'Connect with me on: '.html_entity_decode($text1);
+		        echo '<hr>';
+		}
+																    
 	}					
 ?>
 
