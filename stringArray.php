@@ -22,6 +22,7 @@
 	$c = array('Dan','Steve','James','Padma','Jerry');
 	$obj1->array_diff_assoc($a,$c);
 	$obj1->array_fill_keys($c);
+	$obj1->array_keys($c);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -103,6 +104,11 @@
 		        echo '<h2>4. array_fill_keys</h2>';
 		        $result = array_fill_keys($c,"professor");
 		        print_r($result);
+		        echo '<hr>';
+		}
+		public function array_keys($c) {
+		        echo '<h2>5. array_keys function</h2>';
+		        print_r(array_keys($c,"James"));
 		        echo '<hr>';
 		}
 	}
