@@ -24,6 +24,8 @@
 	$obj1->array_fill_keys($c);
 	$obj1->array_keys($c);
 	$obj1->array_pop($c);
+	$d = array("a"=>"apple","b"=>"banana");
+	$obj1->array_search($d);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -115,6 +117,11 @@
 		public function array_pop($c) {
 		        echo '<h2>6. array_pop</h2>';
 		        echo 'The popped array is: '.array_pop($c);
+		        echo '<hr>';
+		}
+		public function array_search($d) {
+		        echo '<h2>7. array_search function</h2>';
+		        echo 'The corresponding key in the array for apple is: '.array_search("apple",$d);
 		        echo '<hr>';
 		}
 	}
