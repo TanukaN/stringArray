@@ -10,6 +10,7 @@
 	$obj->htmlentities($text1);
 	$obj->count_chars($text);
 	$obj->ltrim($text);
+	$obj->strlen($text);
 	class main {
 		public function __construct() { 
 			echo "<CENTER><h1>String functions</h1></CENTER>";
@@ -48,6 +49,11 @@
 		public function ltrim($text) {
 		        echo '<h2>7. ltrim function</h2>';
 		        echo 'After trimming the sentence, we get: '.ltrim($text,"learning");
+		        echo '<hr>';
+		}
+		public function strlen($text) {
+		        echo '<h2>8. strlen function</h2>';
+		        echo 'The length of the sentence is: '.strlen($text);
 		        echo '<hr>';
 		}
 	}					
