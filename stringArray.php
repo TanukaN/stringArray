@@ -1,11 +1,16 @@
 <?php
-	$obj=new main();			//Defining main class for String functions
+	$obj=new stringClass();                       
 	$str = chr(046);
-	$obj->chr($str);
 	$text = "learning PHP in IS601";
+	$text1 = "&lt;a href=&quot;https://www.linkedin.com/in/tanuka-nayak/&quot;&gt;LinkedIn&lt;/a&gt;";
+	$a = array('Dan','Steve','Padma','Jerry');
+	$b = array(30,45,42,68);
+	$c = array('Dan','Steve','James','Padma','Jerry');
+	$d = array("a"=>"apple","b"=>"banana");
+	
+	$obj->chr($str);
 	$obj->echothis($text);
 	$obj->explode($text);
-	$text1 = "&lt;a href=&quot;https://www.linkedin.com/in/tanuka-nayak/&quot;&gt;LinkedIn&lt;/a&gt;";
 	$obj->html_entity_decode($text1);
 	$obj->htmlentities($text1);
 	$obj->count_chars($text);
@@ -14,24 +19,20 @@
 	$obj->strtolower($text);
 	$obj->substr_replace($text);
 
-	$obj1=new arrayClass();                 //Defining array class for Array functions
-	$a = array('Dan','Steve','Padma','Jerry');
+	$obj1=new arrayClass();                
 	$obj1->array_chunk($a);
-	$b = array(30,45,42,68);
 	$obj1->array_combine($a,$b);
-	$c = array('Dan','Steve','James','Padma','Jerry');
 	$obj1->array_diff_assoc($a,$c);
 	$obj1->array_fill_keys($c);
 	$obj1->array_keys($c);
 	$obj1->array_pop($c);
-	$d = array("a"=>"apple","b"=>"banana");
 	$obj1->array_search($d);
 	$obj1->count($c);
-	$obj1->each($d);
-	$obj1->sort($a);
-	class main {
-		public function __construct() { 
-			echo "<CENTER><h1>String functions</h1></CENTER>";
+	$obj1->each($d);																		        $obj1->sort($a);
+
+	class stringClass {
+	        public function __construct() {
+		        echo "<CENTER><h1>String functions</h1></CENTER>";
 		}	
 		public function chr($str) {
 			echo '<h2>1. chr function</h2>';
