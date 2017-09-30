@@ -108,9 +108,9 @@
 		}
 	}
 	class arrayClass {
-        public function array_chunk($a) {
-            print_r(array_chunk($a,2));
-        }
+       		public function array_chunk($a) {
+            		print_r(array_chunk($a,2));
+        	}
 		public function array_combine($a,$b) {
 			print_r(array_combine($a, $b));
 		}
@@ -142,5 +142,5 @@
 				echo $a[$i]."&nbsp;&nbsp;&nbsp;";
 			}
 		}
-    }
+    	}
 ?>
